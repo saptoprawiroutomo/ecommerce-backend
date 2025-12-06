@@ -1,0 +1,9 @@
+// ... imports ...
+import { createProductReview } from '../controllers/productController.js';
+
+// ... (kode lain) ...
+
+router.route('/product/:id/reviews').post(protect, createProductReview); // Route Review
+
+// ... (kode lain) ...
+export default router;
